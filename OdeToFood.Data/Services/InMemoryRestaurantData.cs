@@ -14,7 +14,8 @@ namespace OdeToFood.Data.Services
             {
                 new Restaurant{Id = 1, Name = "Mike's Restaurant", Cuisine = CuisineType.French },
                 new Restaurant{Id = 2, Name = "Daves's Restaurant", Cuisine = CuisineType.Italian },
-                new Restaurant{Id = 3, Name = "Lionels's Restaurant", Cuisine = CuisineType.Indian }
+                new Restaurant{Id = 3, Name = "Lionels's Restaurant", Cuisine = CuisineType.Indian },
+                new Restaurant{Id = 1, Name = "Naceur's Restaurant", Cuisine = CuisineType.None }
             };
         }
 
