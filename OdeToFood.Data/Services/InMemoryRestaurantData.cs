@@ -15,8 +15,13 @@ namespace OdeToFood.Data.Services
                 new Restaurant{Id = 1, Name = "Mike's Restaurant", Cuisine = CuisineType.French },
                 new Restaurant{Id = 2, Name = "Dave's Restaurant", Cuisine = CuisineType.Italian },
                 new Restaurant{Id = 3, Name = "Lionel's Restaurant", Cuisine = CuisineType.Indian },
-                new Restaurant{Id = 1, Name = "Naceur's Restaurant", Cuisine = CuisineType.None }
+                new Restaurant{Id = 4, Name = "Naceur's Restaurant", Cuisine = CuisineType.None }
             };
+        }
+
+        public Restaurant Get(int id)
+        {
+            return restaurants.FirstOrDefault(r => r.Id == id);
         }
 
         public IEnumerable<Restaurant> GetAll()
